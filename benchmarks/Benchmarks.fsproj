@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="SchedulingBenchmark.fs" />
+    <Compile Include="CollectBenchmark.fs" />
+    <Compile Include="HashedTimingWheelBenchmark.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="BenchmarkDotNet" Version="0.13.1" />
+    <PackageReference Include="Microsoft.Diagnostics.NETCore.Client" Version="0.2.328102" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\src\TimingWheelScheduler.fsproj" />
+  </ItemGroup>
+</Project>

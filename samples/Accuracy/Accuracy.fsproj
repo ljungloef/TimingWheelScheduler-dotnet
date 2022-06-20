@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>6.0</LangVersion>
+    <RootNamespace>TimingWheelScheduler.Samples.Accuracy</RootNamespace>
+    <AssemblyName>TimingWheelScheduler.Samples.Accuracy</AssemblyName>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\TimingWheelScheduler.fsproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Plotly.NET" Version="2.0.0" />
+  </ItemGroup>
+</Project>
